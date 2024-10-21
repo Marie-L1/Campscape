@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Features = () => {
+const Reviews = () => {
   return (
     <div>Features</div>
   )
 }
 
-export default Features
+export default Reviews

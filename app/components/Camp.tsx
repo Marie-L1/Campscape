@@ -1,8 +1,14 @@
-import React from 'react'
+const Campsite = () =>{
+  
+}
 
 const Camp = () => {
   return (
-    <div>Camp</div>
+    <section className="camp">
+      <div className="camp__wrapper">
+
+      </div>
+    </section>
   )
 }
 
