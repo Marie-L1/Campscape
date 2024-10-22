@@ -1,8 +1,9 @@
-import React from 'react'
-
 const HomeHero = () => {
   return (
-    <div>HomeHero</div>
+    <section className="home-hero">
+      <h1 className="home-hero__title"><span className="home-hero__title-span">Campscape:</span> Your Gateway to Alberta’s Camping Gems</h1>
+      <p className="home-hero__description">Explore Alberta’s stunning Rocky Mountain campsites! Discover detailed information, user reviews, and everything you need for your next outdoor adventure.</p>
+    </section>
   )
 }
 

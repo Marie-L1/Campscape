@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <nav className="nav">
         <Link href="/">
-            <Image src="/hilink-logo.svg" alt="Hilink Logo" width={74} height={29}/>
+            <Image src="/campscape-logo.jpg" alt="Campscape Logo" width={74} height={29}/>
         </Link>
           <ul className="nav__list">
             {NAV_LINKS.map((link) => (
