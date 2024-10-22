@@ -1,4 +1,5 @@
 "use client";
+import "./NavBar.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { NAV_LINKS } from "../../constants";
@@ -9,7 +10,7 @@ const NavBar = () => {
   return (
     <nav className="nav">
         <Link href="/">
-            <Image src="/campscape-logo.jpg" alt="Campscape Logo" width={74} height={29}/>
+            <Image src="/campscape-logo.jpg" alt="Campscape Logo" width={100} height={80}/>
         </Link>
           <ul className="nav__list">
             {NAV_LINKS.map((link) => (
@@ -20,7 +21,7 @@ const NavBar = () => {
             <Button 
               type="button"
               title="Login"
-              icon="./user.svg"
+              icon="/user.svg"
               variant="btn_dark_green"
             />
           </div>

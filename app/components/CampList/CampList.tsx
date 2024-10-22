@@ -9,7 +9,7 @@ const CampList = () => {
         <h2 className="">{camp.name}</h2>
         <p className="">{camp.location}</p>
         <p className="">{camp.elevation}</p>
-        <Image src={`/images/${camp.image}`} alt={camp.name} />
+        <Image src={`/images/${camp.scenicImage}`} width={400} height={400} className="camp-list__img" alt={camp.name} />
       </div>
     ))}
   </div>

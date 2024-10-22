@@ -1,8 +1,11 @@
+import "./HomeHero.scss";
+import Image from "next/image";
+
 const HomeHero = () => {
   return (
     <section className="home-hero">
       <div className="home-hero__wrapper">
-        <h1 className="home-hero__title"><span className="home-hero__title-span">Campscape:</span> Your Gateway to Alberta’s Camping Gems</h1>
+        <h1 className="home-hero__title"><span className="home-hero__title-span">Camp</span>scape: Your Gateway to Alberta’s Camping Gems</h1>
         <p className="home-hero__description">Explore Alberta’s stunning Rocky Mountain campsites! Discover detailed information, user reviews, and everything you need for your next outdoor adventure.</p>
       </div>
     </section>
