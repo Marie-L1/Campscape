@@ -1,18 +1,16 @@
 import Image from "next/image";
-import Hero from "./components/Hero";
-import Camp from "./components/Camp";
-import Reviews from "./components/Reviews";
-import CampList from "./components/CampList";
-import GetApp from "./components/GetApp";
+import HomeHero from "./components/HomeHero/HomeHero";
+import CampList from "./components/CampList/CampList";
+import Newsletter from "./components/Newsletter/Newsletter";
+import CampTips from "./components/CampTips/CampTips";
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Camp />
-      <Reviews />
+      <HomeHero />
       <CampList />
-      <GetApp />
+      <CampTips />
+      <Newsletter />
     </>
   );
 }

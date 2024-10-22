@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Button from "./Button";
+import Button from "../Button/Button";
 
-const Hero = () => {
+const CampHero = () => {
   return (
     <section className="hero">
       <div className="hero__map">
@@ -63,4 +63,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default CampHero;

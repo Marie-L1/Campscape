@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { NAV_LINKS } from "../constants";
+import { NAV_LINKS } from "../../constants";
 import { link } from "fs";
-import Button from "./Button";
+import Button from "../Button/Button";
 
 const NavBar = () => {
   return (
