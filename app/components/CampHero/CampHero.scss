@@ -1,2 +1,37 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
+
+.home-hero{
+    background-image: src("/home-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80%;
+        height: 100vh;
+        gap: .625rem;
+        background-color: rgba(255, 255, 255, 0.8); 
+        padding: 7rem 5rem 15rem 5rem; 
+        border-radius: .5rem; 
+        max-width: 31.25rem; 
+        margin: auto;
+        box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.2); 
+    }
+    &__title{
+        @include page-header;
+        color: $primary-blue;
+    }
+    &__description{
+        @include body;
+        color: $primary-blue;
+    }
+}

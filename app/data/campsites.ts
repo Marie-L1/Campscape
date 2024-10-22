@@ -13,7 +13,8 @@ export type Review = {
     location: string;
     elevation: string;
     description: string;
-    image: string; 
+    scenicImage: string; 
+    campsiteImage: string;
     reviews: Review[]; 
   };
   
@@ -24,7 +25,8 @@ export type Review = {
       location: "Banff, Alberta",
       elevation: "1,540 meters",
       description: "A scenic campground located near the town of Banff, offering stunning views of the surrounding mountains and easy access to hiking trails.",
-      image: "tunnel-mountain.jpg",
+      scenicImage: "/images/tunnel-mountain-scenic.jpg",
+      campsiteImage: "/images/tunnel-mountain-campsite.jpg",
       reviews: [
         {
           id: "review1",
@@ -52,7 +54,7 @@ export type Review = {
       location: "Jasper, Alberta",
       elevation: "1,070 meters",
       description: "Nestled in the heart of Jasper National Park, this campground provides access to breathtaking landscapes, wildlife viewing, and outdoor activities.",
-      image: "jasper-national-park.jpg",
+      image: "",
       reviews: [
         {
           id: "review4",
@@ -86,7 +88,7 @@ export type Review = {
       location: "Lake Louise, Alberta",
       elevation: "1,600 meters",
       description: "Located next to the famous Lake Louise, this campground offers a picturesque setting with plenty of hiking opportunities and stunning lake views.",
-      image: "lake-louise.jpg",
+      image: "",
       reviews: [
         {
           id: "review8",
@@ -114,7 +116,7 @@ export type Review = {
       location: "Kananaskis, Alberta",
       elevation: "1,200 meters",
       description: "A beautiful campground set in the Kananaskis region, known for its picturesque mountains and abundant recreational activities.",
-      image: "kananaskis.jpg",
+      image: "",
       reviews: [
         {
           id: "review11",
@@ -142,7 +144,7 @@ export type Review = {
       location: "Cochrane, Alberta",
       elevation: "1,300 meters",
       description: "A tranquil campground by the lake, ideal for fishing and relaxing by the water.",
-      image: "cochrane-lake.jpg",
+      image: "",
       reviews: [
         {
           id: "review14",
@@ -164,7 +166,7 @@ export type Review = {
       location: "Calgary, Alberta",
       elevation: "1,200 meters",
       description: "A convenient campground located near Calgary, surrounded by nature with excellent amenities.",
-      image: "fish-creek.jpg",
+      image: "",
       reviews: [
         {
           id: "review16",
@@ -192,7 +194,7 @@ export type Review = {
       location: "Wabamun, Alberta",
       elevation: "900 meters",
       description: "Located by Wabamun Lake, this campground is perfect for water activities and relaxation.",
-      image: "wabamun-lake.jpg",
+      image: "",
       reviews: [
         {
           id: "review19",
@@ -220,7 +222,7 @@ export type Review = {
       location: "Red Deer, Alberta",
       elevation: "800 meters",
       description: "A family-friendly campground with lots of activities and a beautiful river nearby.",
-      image: "red-deer.jpg",
+      image: "",
       reviews: [
         {
           id: "review22",
@@ -242,7 +244,7 @@ export type Review = {
       location: "Waterton, Alberta",
       elevation: "1,200 meters",
       description: "A stunning campground located within Waterton Lakes National Park, surrounded by breathtaking views.",
-      image: "waterton-lakes.jpg",
+      image: "",
       reviews: [
         {
           id: "review24",
@@ -270,7 +272,7 @@ export type Review = {
       location: "Strathcona County, Alberta",
       elevation: "600 meters",
       description: "Known for its bison herds, this campground offers a unique experience in a national park setting.",
-      image: "elk-island.jpg",
+      image: "",
       reviews: [
         {
           id: "review27",
