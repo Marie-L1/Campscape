@@ -25,11 +25,11 @@
         box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.2); 
     }
     &__title-span{
-        color: $primary-dark;
+        color: $primary-blue;
     }
     &__title{
         @include page-header;
-        color: $primary-blue;
+        color: $primary-dark;
     }
     &__description{
         @include body;

@@ -25,7 +25,7 @@ export type Review = {
       location: "Banff, Alberta",
       elevation: "1,540 meters",
       description: "A scenic campground located near the town of Banff, offering stunning views of the surrounding mountains and easy access to hiking trails.",
-      scenicImage: "tunnel-mountain-scenic.jpg",
+      scenicImage: "tunnel-mountain-scenic.webp",
       campsiteImage: "tunnel-mountain-campsite.jpg",
       reviews: [
         {
@@ -170,8 +170,8 @@ export type Review = {
       location: "Calgary, Alberta",
       elevation: "1,200 meters",
       description: "A convenient campground located near Calgary, surrounded by nature with excellent amenities.",
-      scenicImage: "fish-creek-scenic.jpg",
-      campsiteImage: "fish-creek-campsite.jpg",
+      scenicImage: "fish-creek-scenic.jpeg",
+      campsiteImage: "fish-creek-campsite.webp",
       reviews: [
         {
           id: "review16",

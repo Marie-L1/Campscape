@@ -9,29 +9,14 @@ import Button from "../Button/Button";
 const NavBar = () => {
   return (
     <nav className="nav">
-        <Link href="/">
-            <Image src="/campscape-logo.jpg" alt="Campscape Logo" width={100} height={80}/>
+        <Link href="/" className="nav__logo-link">
+            <Image className="nav__logo" src="/images/Campscape-logo.jpg" alt="Campscape Logo" width={150} height={130}/>
         </Link>
           <ul className="nav__list">
             {NAV_LINKS.map((link) => (
               <Link href={link.href} key={link.key} className="nav__links">{link.label}</Link>
             ))}
           </ul>
-          <div className="nav__login-btn">
-            <Button 
-              type="button"
-              title="Login"
-              icon="/user.svg"
-              variant="btn_dark_green"
-            />
-          </div>
-
-          <Image 
-          src="/menu.svg" 
-          alt="menu" 
-          width={32} 
-          height={32}
-          className="nav__menu-img"/>
     </nav>
   )
 }
