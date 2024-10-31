@@ -1,0 +1,38 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.home-hero{
+    background-image: url("/images/hero-home.jpg");
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80%;
+        height: 40vh;
+        gap: .625rem;
+        background-color: rgba(255, 255, 255, 0.8); 
+        padding: 3rem 2rem 1rem 2rem; 
+        border-radius: .5rem; 
+        max-width: 16rem; 
+        margin: auto;
+        box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.2); 
+    }
+    &__title-span{
+        color: $primary-blue;
+    }
+    &__title{
+        @include sub-header;
+        color: $primary-dark;
+    }
+    &__description{
+        @include body-medium;
+        color: $primary-dark;
+    }
+}

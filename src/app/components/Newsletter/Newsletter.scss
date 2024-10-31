@@ -1,0 +1,45 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    
+    &__label{
+        @include sub-header;
+        margin-bottom: 40px;
+    }
+    &__form{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    &__input{
+        @include body-medium;
+        border: none;
+        border-bottom: 1px solid $primary-dark;
+        background-color: transparent;
+        width: 40vw;
+        padding: 0.5rem 1rem;
+
+        &:focus{
+            border-color: $primary-dark;
+        }
+    }
+    &__btn{
+        padding: 1rem;
+        background-color: $primary-blue;
+        border: none;
+        border-radius: 5px;
+        color: $primary-light;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $secondary-blue;
+        }
+    }
+}

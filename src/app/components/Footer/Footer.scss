@@ -1,0 +1,68 @@
+@use "../../styles/abstracts/mixins" as *;
+@use "../../styles/abstracts/variables" as *;
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: $primary-light;
+     &__wrapper{
+        display: flex;
+        flex-direction: column;
+        width: full;
+        gap: 14px;
+     }
+     &__items{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10%;
+     }
+     &__logo{
+        margin-bottom: -10px;
+     }
+     &__logo-img{
+        margin-bottom: -20px;
+        margin-left: 20px;
+     }
+     &__links{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 30px;
+     }
+     &__children-links{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        color: $secondary-light;
+        text-decoration: none;
+        margin-right: 17px;
+     }
+     &__link-item{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        color: $secondary-blue;
+        text-decoration: none;
+        @include body-small;
+
+     }
+
+}
+
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    &__title{
+        white-space: nowrap;
+        @include body-medium;
+        margin-bottom: -5px;
+        display: flex;
+        justify-content: space-around;
+    }
+}

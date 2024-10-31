@@ -1,0 +1,39 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.camp-list{
+    display: flex;
+    overflow-x: auto;
+    padding: 2rem;
+    gap: 1rem;
+
+    &__item{
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    &__title{
+        @include body-large;
+        text-decoration: none;
+        color: $primary-dark;
+        border: none;
+    }
+    &__img{
+        border-radius: 15px;
+        box-shadow: -1px 0px 5px 3px rgb(206 201 201);
+        width: 300px;
+        height: 300px;
+    }
+    &__link{
+        text-decoration: none;
+    }
+}
+
+.camp-title{
+    @include sub-header;
+    margin-left: 30px;
+    margin-bottom: -5px;
+    margin-top: 30px;
+}

@@ -1,0 +1,27 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.nav{
+
+    &__logo{
+        margin-top: -20px;
+        margin-left: 20px;
+        margin-bottom: -40px;
+    }
+    &__logo-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: -30px;
+    }
+    &__links{
+        text-decoration: none;
+        color: $primary-dark;
+        @include body-medium;
+    }
+}
