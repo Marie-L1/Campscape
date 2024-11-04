@@ -39,12 +39,9 @@ const Footer = () => {
               </FooterColumn>
             ))}
           </div>
+          <Image src="/images/tress.svg" alt="trees" className="footer__trees" width={50} height={50} />
         </div>
       </div>
-        <div className="footer-imgs">
-            <Image src="/images/tress.svg" alt="trees" className="footer-imgs__trees" width={50} height={50} />
-            <Image src="/images/leaf.svg" alt="leaf" className="footer-imgs__leaf" width={50} height={50} />
-        </div>
     </footer>
   )
 }
