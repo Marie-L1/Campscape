@@ -4,9 +4,7 @@
 .nav{
 
     &__logo{
-        margin-top: -20px;
-        margin-left: 20px;
-        margin-bottom: -40px;
+        margin: -20px 0 -40px 20px;
     }
     &__logo-link{
         display: flex;
@@ -17,11 +15,29 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin-left: -30px;
+        margin: 20px 0;
     }
     &__links{
         text-decoration: none;
         color: $primary-dark;
         @include body-medium;
+    }
+    @include tablet{
+        &__logo{
+            width: 170px;
+            height: 170px;
+        }
+        &__links{
+            @include dt-body-medium;
+        }
+    }
+    @include desktop{
+        &__logo{
+            width: 170px;
+            height: 170px;
+        }
+        &__links{
+            @include dt-body-medium;
+        }
     }
 }

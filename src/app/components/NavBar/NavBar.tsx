@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <nav className="nav">
         <Link href="/" className="nav__logo-link">
-            <Image className="nav__logo" src="/images/Campscape-logo.jpg" alt="Campscape Logo" width={150} height={130}/>
+            <Image className="nav__logo" src="/images/Campscape-logo.svg" alt="Campscape Logo" width={150} height={130}/>
         </Link>
           <ul className="nav__list">
             {NAV_LINKS.map((link) => (
