@@ -54,4 +54,22 @@
             @include dt-body-large;
         }
     }
+    @include desktop{
+        height: 80vh;
+
+        &__wrapper{
+            flex-direction: row;
+            align-items: center;
+            gap: 5rem;
+            padding: 11rem; 
+            border-radius: .5rem; 
+            max-width: 75vw; 
+        }
+        &__title{
+            @include dt-page-header;
+        }
+        &__description{
+            @include dt-sub-header;
+        }
+    }
 }

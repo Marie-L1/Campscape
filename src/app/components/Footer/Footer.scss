@@ -80,6 +80,31 @@
        margin-top: -120px;
       }
      }
+     @include desktop{
+      // padding: 30px;
+      padding-left: 250px;
+
+      &__logo-img{
+         margin-left: 20px;
+         width: 160px;
+         height: 160px;
+      }
+      &__links{
+         gap: 300px;
+      }
+      &__children-links{
+         gap: 8px;
+      }
+      &__link-item{
+         @include dt-body-medium;
+      }
+      &__trees{
+       width: 30vw;
+       height: 30vh;
+       margin-left: 850px;
+       margin-top: -120px;
+      }
+     }
 
 }
 
@@ -99,6 +124,13 @@
     }
     @include tablet{
       &__title{
+         @include dt-body-medium;
+         margin-left: -37px;
+     }
+    }
+    @include tablet{
+      &__title{
+         @include dt-body-large;
          margin-left: -37px;
      }
     }
