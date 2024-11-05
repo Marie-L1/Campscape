@@ -42,7 +42,7 @@
         }
     }
     @include desktop{
-        margin-left: 180px;
+        margin-left: 70px;
         &__title{
             @include dt-sub-header;
         }
@@ -68,6 +68,6 @@
         @include dt-page-header;
         margin-top: 50px;
         margin-bottom: 10px;
-        margin-left: 210px;
+        margin-left: 100px;
     }
 }

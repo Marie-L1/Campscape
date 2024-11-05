@@ -3,9 +3,9 @@ import { campsites } from "../data/campsites";
 // NAVIGATION
 export const NAV_LINKS = [
     { href: '/', key: 'home', label: 'Home' },
-    { href: '/', key: 'campsites', label: 'Campsites' },
-    { href: '/', key: 'essentials', label: 'Outdoor Essentials' },
-    { href: '/', key: 'about_us', label: 'About Us ' },
+    { href: '/campsites', key: 'campsites', label: 'Campsites' },
+    { href: '/essentials', key: 'essentials', label: 'Outdoor Essentials' },
+    { href: '/about_us', key: 'about_us', label: 'About Us ' },
   ];
 
 // CAMPSITE ROUTES

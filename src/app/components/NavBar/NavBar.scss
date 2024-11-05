@@ -21,6 +21,14 @@
         text-decoration: none;
         color: $primary-dark;
         @include body-medium;
+        position: relative;
+
+        &.active{
+            border-bottom: 2px solid $primary-dark;
+        }
+        &:hover{
+            color: $primary-blue;
+        }
     }
     @include tablet{
         &__logo{
