@@ -7,8 +7,17 @@ import './CampList.scss';
 const CampList = () => {
   return (
     <>
-      <h1 className="camp-title">Campsites</h1>
+      <div className="camp-title">
+        <h1 className="camp-title__title">Campsites</h1>
+        <button>
+        <Image className="camp-list__arrow-right" src="/images/arrow-right.svg" alt="arrow" width={50} height={50} />
+        </button>
+        <button>
+        <Image className="camp-list__arrow-right" src="/images/arrow-left.svg" alt="arrow" width={50} height={50} />
+        </button>
+      </div>
       <div className="camp-list">
+
         {CAMPSITE_ROUTES.map(({ href, key, label }) => (
           <div key={key} className="camp-list__item">
             <Link href={href} className="camp-list__link">
