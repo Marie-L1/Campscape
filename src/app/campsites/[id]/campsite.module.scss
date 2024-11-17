@@ -1,0 +1,11 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.campsite{
+    display: flex;
+    flex-direction: column;
+
+    &__header{
+        transition: opacity 0.5s ease-in-out;
+    }
+}
