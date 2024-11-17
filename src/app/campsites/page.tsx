@@ -1,23 +1,20 @@
-import { CAMPSITE_ROUTES } from '../../constants/index'; 
-import { campsites } from '../../data/campsites';
-import Image from 'next/image';
+import { CAMPSITE_ROUTES } from '../constants';
 import Link from 'next/link';
-import './CampList.scss';
+import Image from 'next/image';
 
-const CampList = () => {
+const CampsiteList = () => {
   return (
     <>
-        <h1 className="camp-title">Campsites</h1>
+      <h1 className="camp-title">Campsites</h1>
       <div className="camp-list">
         {CAMPSITE_ROUTES.map(({ href, key, label }) => (
           <div key={key} className="camp-list__item">
             <Link href={href} className="camp-list__link">
               <Image 
-                src={`/images/${campsites.find(camp => camp.id === key)?.scenicImage}`} 
-                width={300} 
-                height={300} 
-                className="camp-list__img" 
+                src={`/images/${key}-thumbnail.jpg`} 
                 alt={label} 
+                width={300} 
+                height={200} 
               />
               <h2 className="camp-list__title">{label}</h2>
             </Link>
@@ -28,4 +25,4 @@ const CampList = () => {
   );
 };
 
-export default CampList;
+export default CampsiteList;
