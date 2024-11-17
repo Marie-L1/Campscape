@@ -1,14 +1,14 @@
-@use "../../styles/abstracts/mixins" as *;
-@use "../../styles/abstracts/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
 
 .footer{
     display: flex;
     justify-content: center;
     background-color: $primary-light;
+
      &__wrapper{
         display: flex;
         flex-direction: column;
-        width: full;
         gap: 14px;
      }
      &__items{
@@ -22,8 +22,7 @@
         margin-bottom: -10px;
      }
      &__logo-img{
-        margin-bottom: -20px;
-        margin-left: 20px;
+        margin-left: 17px;
      }
      &__links{
         display: flex;
@@ -32,6 +31,7 @@
         justify-content: space-between;
         align-items: flex-start;
         margin-bottom: 30px;
+        margin-left: 30px;
      }
      &__children-links{
         display: flex;
@@ -39,7 +39,7 @@
         gap: 4px;
         color: $secondary-light;
         text-decoration: none;
-        margin-right: 17px;
+        margin-right: 12px;
      }
      &__link-item{
         display: flex;
@@ -48,7 +48,62 @@
         color: $secondary-blue;
         text-decoration: none;
         @include body-small;
+     }
+     &__trees{
+      width: 20vw;
+      height: 20vh;
+      margin-left: 300px;
+      margin-top: -100px;
+      padding-bottom: 10px;
+     }
+     @include tablet{
+      padding: 30px;
 
+      &__logo-img{
+         margin-left: 20px;
+         width: 120px;
+         height: 120px;
+      }
+      &__links{
+         gap: 140px;
+      }
+      &__children-links{
+         gap: 8px;
+      }
+      &__link-item{
+         @include dt-body-small;
+      }
+      &__trees{
+       width: 25vw;
+       height: 25vh;
+       margin-left: 470px;
+       margin-top: -120px;
+      }
+     }
+     @include desktop{
+      // padding: 30px;
+      padding-left: 250px;
+
+      &__logo-img{
+         margin-left: 20px;
+         width: 160px;
+         height: 160px;
+      }
+      &__links{
+         gap: 300px;
+      }
+      &__children-links{
+         gap: 8px;
+      }
+      &__link-item{
+         @include dt-body-medium;
+      }
+      &__trees{
+       width: 30vw;
+       height: 30vh;
+       margin-left: 850px;
+       margin-top: -120px;
+      }
      }
 
 }
@@ -58,11 +113,25 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+
     &__title{
         white-space: nowrap;
         @include body-medium;
-        margin-bottom: -5px;
+        margin-bottom: 15px;
+        margin-left: -30px;
         display: flex;
         justify-content: space-around;
+    }
+    @include tablet{
+      &__title{
+         @include dt-body-medium;
+         margin-left: -37px;
+     }
+    }
+    @include tablet{
+      &__title{
+         @include dt-body-large;
+         margin-left: -37px;
+     }
     }
 }

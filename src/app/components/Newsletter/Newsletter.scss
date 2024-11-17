@@ -37,9 +37,47 @@
         border-radius: 5px;
         color: $primary-light;
         cursor: pointer;
+        @include body-medium;
 
         &:hover{
             background-color: $secondary-blue;
         }
+    }
+    @include tablet{
+        padding: 10rem 0;
+    
+        &__label{
+            @include dt-sub-header;
+            margin-bottom: 3.125rem;
+        }
+        &__form{
+            margin-left: 1.875rem;
+        }
+        &__input{
+            @include dt-body-medium;
+            width: 45vw;
+            padding: 1rem 1.5rem;
+        }
+        &__btn{
+            padding: 1.5rem;
+        }
+    }
+    @include desktop{
+        padding: 20rem 0;
+    
+        &__label{
+            @include dt-page-header;
+            margin-bottom: 3.125rem;
+        }
+        &__input{
+            @include dt-body-medium;
+            width: 50vw;
+            padding: 1rem 1.5rem;
+        }
+        &__btn{
+            padding: 2rem;
+            @include dt-sub-header;
+        }
+
     }
 }

@@ -39,6 +39,7 @@ const Footer = () => {
               </FooterColumn>
             ))}
           </div>
+          <Image src="/images/tress.svg" alt="trees" className="footer__trees" width={50} height={50} />
         </div>
       </div>
     </footer>

@@ -7,7 +7,7 @@ import './CampList.scss';
 const CampList = () => {
   return (
     <>
-      <h1 className="camp-title">Campsites</h1>
+        <h1 className="camp-title">Campsites</h1>
       <div className="camp-list">
         {CAMPSITE_ROUTES.map(({ href, key, label }) => (
           <div key={key} className="camp-list__item">
