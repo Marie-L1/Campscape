@@ -16,9 +16,11 @@ const CampsiteById = () =>{
 
     const [currentImage, setCurrentImage] = useState("campsiteImage");
 
-    useEffect(() =>{
+    useEffect(() => {
         const imageInterval = setInterval(() => {
-            setCurrentImage(currentImage === "campsiteImage" ? "scenicImage" : "campsiteImage");
+            setCurrentImage(prev =>
+                prev === "campsiteImage" ? "scenicImage" : "campsiteImage"
+            );
         }, 3000);
         return () => clearInterval(imageInterval);
     }, []);
@@ -28,15 +30,16 @@ const CampsiteById = () =>{
             <div className="campsite__header">
                 <h1 className="campsite__title">{campsite.name}</h1>
                 <Image
+                className="campsite__img"
                 src={`/images/${campsite[currentImage]}`}
                 alt={campsite.name}
                 width={600} 
                 height={400} />
             </div>
             <div className="campsite__details">
-                <p>Location: {campsite.location}</p>
-                <p>Elevation: {campsite.elevation}</p>
-                <p>{campsite.description}</p>
+                <p className="campsite__location">Location: {campsite.location}</p>
+                <p className="campsite__elevation">Elevation: {campsite.elevation}</p>
+                <p className="campsite__description">{campsite.description}</p>
             </div>
             <div className="campsite__reviews">
                 <h2>Reviews</h2>

@@ -8,4 +8,25 @@
     &__header{
         transition: opacity 0.5s ease-in-out;
     }
+    &__title{
+        @include page-header;
+    }
+    &__img{
+        height: 30vh;
+        width: 200px;
+    }
+    &__details{
+        @include body-large;
+    }
+    &__location{
+        color: $primary-blue;
+        font-weight: 600;
+    }
+    &__elevation{
+        color: $primary-blue;
+        font-weight: 600;
+    }
+    &__description{
+
+    }
 }
