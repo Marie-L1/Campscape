@@ -10,6 +10,7 @@ const CampsiteById = () =>{
     const { id } = useParams();
     const campsite = campsites.find(camp => camp.id === id);
 
+
     if(!campsite){
         return <p>Campsite not found</p>
     }
