@@ -4,7 +4,7 @@ import { useParams } from "next/navigation";
 import { campsites } from "@/app/data/campsites";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import "./campsite.module.scss";
+import "./campsite.scss";
 
 const CampsiteById = () =>{
     const { id } = useParams();
