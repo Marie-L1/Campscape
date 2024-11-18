@@ -13,16 +13,21 @@
     }
     &__title{
         @include sub-header;
-        border-top: 1.5px solid $primary-blue;
         padding-top: 30px;
         padding-bottom: 20px;
+        margin-bottom: -97px;
         text-align: center;
         width: 100%;
+        background-color: rgba(37, 78, 122, 0.5);
+        color: $secondary-light;
+        z-index: 3;
     }
     &__img{
         height: 50vh;
         width: 100vw;
         box-shadow: 0px 0px 5px 2px rgb(206 201 201);
+        z-index: 0;
+        border: 1.5px solid $secondary-blue;
     }
     &__details{
         @include body-small;
@@ -31,15 +36,11 @@
         justify-content: center;
         align-items: center;
         gap: 3rem;
-        margin: 1rem 1rem;
         padding: 30px 0;
+        background-color: $secondary-light;
     }
-    &__location{
-        color: $primary-blue;
-        font-weight: 600;
-    }
-    &__elevation{
-        color: $primary-blue;
+    &__location, &__elevation{
+        color: $primary-dark;
         font-weight: 600;
     }
     &__description{
@@ -156,6 +157,7 @@
 
         &__title{
             @include dt-sub-header;
+            margin-bottom: -103px;
         }
         &__img{
             height: 80vh;
@@ -163,7 +165,6 @@
         &__details{
             @include dt-body-medium;
             justify-content: space-around;
-            width: 90%;
             padding: 50px 0;
         }
         &__description{
@@ -215,37 +216,40 @@
         &__title{
             @include dt-page-header;
             padding: 50px 0;
+            margin-top: 30px;
+            margin-bottom: -160px;
         }
         &__img{
-            width: 60vw;
-            border-radius: 10px;
+            width: 100vw;
+            height: 80vh;;
         }
         &__details{
-            @include dt-body-large;
+            @include sub-header;
             justify-content: space-evenly;
             align-items: center;
-            width: 90%;
+            width: 100%;
             padding-left: 100px;
             gap: 0;
-
         }
         &__description{
-            @include dt-body-large;
+            @include sub-header;
             display: flex;
             align-items: center;
             justify-content: center;
             align-content: center;
             flex-wrap: wrap;
-            margin: 0 100px 100px 100px;
-            padding: 0 250px 50px 310px;
+            margin: 100px 100px 100px 100px;
+            padding: 0 550px 50px 450px;
+            width: 100%;
+
             &::before {
                 content: "";
                 position: absolute;
                 left: 50%;
-                width: 64%;
+                width: 55%;
                 height: .0938rem;
                 background-color: $primary-blue;
-                transform: translateX(-47%);
+                transform: translateX(-56%);
                 bottom: 0;
             }
         }
@@ -257,18 +261,18 @@
             text-align: left;
         }
         &__input{
-            width: 30%;
-            padding: 1rem;
+            width: 40%;
+            padding: 1.5rem;
         }
         &__textarea{
-            width: 30%;
-            padding: 1rem;
-            height: 170px;
+            width: 40%;
+            padding: 1.5rem;
+            height: 250px;
         }
         &__btn{
             width: 10%;
             padding: 0.5rem;
-            @include dt-labels-links-buttons;
+            @include dt-body-large;
             border-radius: 5px;
         }
         &__reviews{
@@ -276,12 +280,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin: 0px 100px;
+            margin: 0px 300px;
         }
         &__reviews-title{
-            @include dt-sub-header;
+            @include page-header;
             width: 59%;
-            padding: 20px 0;
+            padding: 20px 15px 20px 0;
             font-weight: 400;
             position: relative;
     
@@ -289,10 +293,10 @@
                 content: "";
                 position: absolute;
                 left: 50%;
-                width: 100%;
+                width: 116%;
                 height: .0938rem;
                 background-color: $primary-blue;
-                transform: translateX(-50%);
+                transform: translateX(-47%);
             }
             &::after {
                 bottom: 0; 
@@ -302,26 +306,26 @@
             display: flex;
             flex-direction: column;
             gap: 40px;
-            padding: 20px 300px;
+            padding: 20px 325px;
             position: relative;
     
             &::before { 
                 content: "";
                 position: absolute;
                 left: 50%;
-                width: 60%;
+                width: 70%;
                 height: .0938rem;
                 background-color: $primary-blue;
-                transform: translateX(-50%);
+                transform: translateX(-47%);
                 bottom: 0;
             }
         }
         &__reviews-name, &__reviews-timestamp{
-            @include dt-body-medium;
+            @include dt-body-large;
             color: $secondary-blue;
         }
         &__reviews-comment{
-            @include dt-body-large;
+            @include sub-header;;
         }
     }
 }
