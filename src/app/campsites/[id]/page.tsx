@@ -40,14 +40,16 @@ const CampsiteById = () =>{
             <div className="campsite__details">
                 <p className="campsite__location">Location: {campsite.location}</p>
                 <p className="campsite__elevation">Elevation: {campsite.elevation}</p>
-                <p className="campsite__description">{campsite.description}</p>
             </div>
+                <p className="campsite__description">{campsite.description}</p>
             <div className="campsite__reviews">
-                <h2>Reviews</h2>
+                <h2 className="campsite__reviews-title">Reviews</h2>
                 {campsite.reviews.map(({name, comment, timestamp}, index) => (
                     <div key={index} className="campsite__reviews-item">
-                        <h3 className="campsite__reviews-name">{name}:</h3>
-                        <h3 className="campsite__reviews-timestamp">{timestamp}</h3>
+                        <div className="campsite__name-wrapper">
+                            <h3 className="campsite__reviews-name">{name}</h3>
+                            <h3 className="campsite__reviews-timestamp">{timestamp}</h3>
+                        </div>
                         <p className="campsite__reviews-comment">{comment}</p>
                     </div>
                 ))} 
