@@ -5,6 +5,7 @@ import { campsites } from "@/app/data/campsites";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import "./campsite.scss";
+import Newsletter from "@/app/components/Newsletter/Newsletter";
 
 const CampsiteById = () =>{
     const { id } = useParams();
@@ -41,7 +42,13 @@ const CampsiteById = () =>{
                 <p className="campsite__location">Location: {campsite.location}</p>
                 <p className="campsite__elevation">Elevation: {campsite.elevation}</p>
             </div>
-                <p className="campsite__description">{campsite.description}</p>
+            <p className="campsite__description">{campsite.description}</p>
+            <form className="campsite__form">
+                <label className="campsite__label" for="add-review">Leave a review:</label>
+                <input id="add-review" className="campsite__input" type="text" placeholder="Name" />
+                <textarea id="add-review" className="campsite__textarea" placeholder="Comment"></textarea>
+                <button className="campsite__btn">Submit</button>
+            </form>
             <div className="campsite__reviews">
                 <h2 className="campsite__reviews-title">Reviews</h2>
                 {campsite.reviews.map(({name, comment, timestamp}, index) => (
@@ -54,6 +61,8 @@ const CampsiteById = () =>{
                     </div>
                 ))} 
             </div>
+
+            <Newsletter />
         </section>
     )
 }

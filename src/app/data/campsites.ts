@@ -208,7 +208,7 @@ export type Review = {
       elevation: "900 meters",
       description: "Located by Wabamun Lake, this campground is perfect for water activities and relaxation.",
       scenicImage: "wabamun-scenic.jpg",
-      campsiteImage: "wabamun-campsite.jpg",
+      campsiteImage: "wabamun-campground.jpg",
       reviews: [
         {
           id: "review19",
