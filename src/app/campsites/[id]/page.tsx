@@ -44,7 +44,7 @@ const CampsiteById = () =>{
             </div>
             <p className="campsite__description">{campsite.description}</p>
             <form className="campsite__form">
-                <label className="campsite__label" for="add-review">Leave a review:</label>
+                <label className="campsite__label" >Leave a review:</label>
                 <input id="add-review" className="campsite__input" type="text" placeholder="Name" />
                 <textarea id="add-review" className="campsite__textarea" placeholder="Comment"></textarea>
                 <button className="campsite__btn">Submit</button>
