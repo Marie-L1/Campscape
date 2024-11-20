@@ -11,7 +11,7 @@ const CampsiteList = () => {
         <h1 className="campsite-list__hero-title">Discover Your Next Adventure</h1>
       </div>
 
-      {/* <h1 className="campsite-list__title">Campsites</h1> */}
+      <div className="campsite-list__cards-wrapper">
       {CAMPSITE_ROUTES.map(({ href, key, label, location }) => (
           <div key={key} className="campsite-list__card">
               <Image 
@@ -28,6 +28,7 @@ const CampsiteList = () => {
               </Link>
           </div>
         ))}
+        </div>
     </section>
   );
 };

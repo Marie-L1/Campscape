@@ -10,21 +10,20 @@
     &__hero{
         background-image: url("/images/hero-campsite.jpg");
         background-size: cover;
-        height: 45vh;
+        height: 400px;
         width: 100%;
+        margin-bottom: 50px;
+        padding-bottom: 50px;
     }
     &__hero-title{
         @include page-header;
         color: $primary-light;
         text-align: center;
         padding-top: 30px;
-        padding-bottom: 20px;
-        margin-bottom: -97px;
-        text-align: center;
+        padding-bottom: 30px;
         width: 100%;
         background-color: rgba(130, 194, 230, 0.5);
         color: $primary-dark;
-        z-index: 3;
     }
     &__title{
         @include sub-header;
@@ -79,6 +78,90 @@
         }
     }
     @include tablet{
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: row;
+        align-items: center;
+
+    &__hero{
+        background-image: url("/images/hero-campsite.jpg");
+        background-size: cover;
+        height: 500px;
+        width: 100%;
+    }
+    &__hero-title{
+        @include dt-page-header;
+        color: $primary-light;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 100%;
+        background-color: rgba(130, 194, 230, 0.5);
+        color: $primary-dark;
+    }
+    &__title{
+        @include dt-sub-header;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    &__cards-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        border: 1.5px solid $secondary-light;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 10px;
+        width: 250px;
+        box-shadow: 0px 0px 4px 1px rgb(206 201 201);
+
+        &:hover{
+            border: 2px solid $primary-blue;
+        }
+    }
+    &__card-img{
+        border-radius: 5px;
+        box-shadow: -1px 0px 3px 1px rgb(206 201 201);
+        width: 200px;
+        height: 200px;
+    }
+    &__card-title{
+        @include dt-body-medium;
+        text-align: center;
+        width: 100%;
+    }
+    &__card-location{
+        @include dt-body-medium;
+        color: $secondary-blue;
+    }
+    &__card-btn{
+        @include dt-body-medium;
+        background-color: $primary-light;
+        color: $primary-dark;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        width: 200px;
+    } 
+    }
+    @include desktop{
+        &__cards-wrapper{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
     }
 }
