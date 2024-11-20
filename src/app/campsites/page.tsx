@@ -12,7 +12,7 @@ const CampsiteList = () => {
       </div>
 
       <div className="campsite-list__cards-wrapper">
-      {CAMPSITE_ROUTES.map(({ href, key, label, location }) => (
+      {CAMPSITE_ROUTES.map(({ href, key, label }) => (
           <div key={key} className="campsite-list__card">
               <Image 
                 src={`/images/${campsites.find(camp => camp.id === key)?.scenicImage}`} 
@@ -22,7 +22,7 @@ const CampsiteList = () => {
                 alt={label} 
               />
               <h2 className="campsite-list__card-title">{label}</h2>
-              <h3 className="campsite-list__card-location">{location}</h3>
+              <h3 className="campsite-list__card-location">{campsites?.find(camp => camp.id === key)?.location}</h3>
               <Link href={href}>
                 <button className="campsite-list__card-btn">Explore</button>
               </Link>
