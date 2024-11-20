@@ -5,7 +5,7 @@ export const NAV_LINKS = [
     { href: '/', key: 'home', label: 'Home' },
     { href: '/campsites', key: 'campsites', label: 'Campsites' },
     { href: '/essentials', key: 'essentials', label: 'Outdoor Essentials' },
-    { href: '/about_us', key: 'about_us', label: 'About Us ' },
+    { href: '/about', key: 'about', label: 'About Us' },
   ];
 
 // CAMPSITE ROUTES

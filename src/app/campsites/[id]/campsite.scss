@@ -10,6 +10,7 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
+        background-color: $secondary-light;
     }
     &__title{
         @include sub-header;
@@ -28,6 +29,7 @@
         box-shadow: 0px 0px 5px 2px rgb(206 201 201);
         z-index: 0;
         border: 1.5px solid $secondary-blue;
+        object-position: bottom;
     }
     &__details{
         @include body-small;
@@ -215,13 +217,16 @@
     @include desktop{
         &__title{
             @include dt-page-header;
-            padding: 50px 0;
+            padding: 100px 0;
             margin-top: 30px;
-            margin-bottom: -160px;
+            margin-bottom: -260px;
+            width: 80%;
+            border-radius: 5px;
         }
         &__img{
-            width: 100vw;
-            height: 80vh;;
+            width: 80vw;
+            height: 60%;
+            border-radius: 5px;
         }
         &__details{
             @include sub-header;

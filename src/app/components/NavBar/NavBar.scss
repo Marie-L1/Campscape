@@ -41,11 +41,11 @@
     }
     @include desktop{
         &__logo{
-            width: 200px;
-            height: 200px;
+            width: 250px;
+            height: 250px;
         }
         &__links{
-            @include dt-body-large;
+            @include dt-sub-header;
         }
         &__list{
             justify-content: space-evenly;
