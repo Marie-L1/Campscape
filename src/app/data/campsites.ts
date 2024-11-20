@@ -319,6 +319,54 @@ export type Review = {
           "timestamp": "2023-06-11"
         }
       ]
+    },
+    {
+      id: "11",
+      key: "11",
+      name: "Miquelon Lake Provincial Park Campground",
+      location: "Camrose County, Alberta",
+      elevation: "750 meters",
+      description: "Nestled near the shores of Miquelon Lake, this serene campground offers a peaceful retreat surrounded by wetlands and rolling hills. It's an ideal destination for bird watching, hiking, and reconnecting with nature.",
+      scenicImage: "miquelon-scenic.jpg",
+      campsiteImage: "miquelon-campsite.jpg",
+      reviews: [
+        {
+          id: "review31",
+          name: "Emma Thompson",
+          comment: "A hidden gem for nature lovers! The hiking trails and bird-watching opportunities were fantastic.",
+          timestamp: "2023-08-15",
+        },
+        {
+          id: "review32",
+          name: "Jack Morgan",
+          comment: "Perfect for a quiet getaway. The scenery was absolutely beautiful.",
+          timestamp: "2023-06-10",
+        },
+      ],
+    },
+    {
+      id: "12",
+      key: "12",
+      name: "Dinosaur Provincial Park Campground",
+      location: "Patricia, Alberta",
+      elevation: "700 meters",
+      description: "Located in the heart of Alberta's Badlands, this unique campground offers stunning desert-like landscapes and a chance to explore one of the richest dinosaur fossil beds in the world. Perfect for adventurers and history buffs alike.",
+      scenicImage: "dinosaur-scenic.jpg",
+      campsiteImage: "dinosaur-campsite.jpg",
+      reviews: [
+        {
+          id: "review33",
+          name: "Sophia Lopez",
+          comment: "An unforgettable experience! The Badlands were breathtaking, and the guided fossil tours were incredible.",
+          timestamp: "2022-09-05",
+        },
+        {
+          id: "review34",
+          name: "Ethan Brown",
+          comment: "Camping here felt like stepping back in time. A truly unique place to stay!",
+          timestamp: "2023-05-21",
+        },
+      ],
     },    
   ];
   
