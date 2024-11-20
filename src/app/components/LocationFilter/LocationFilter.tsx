@@ -58,7 +58,7 @@ function LocationFilter({ setFilteredCampsites, campsites }: LocationFilterProps
                         setFilterValue(""); // Reset filter value on filter type change
                     }}
                 >
-                    <option className="filter__option" value="">-- Select Filter Type --</option>
+                    <option className="filter__option" value="">Select Filter Type</option>
                     <option className="filter__option" value="region">Region</option>
                     <option className="filter__option" value="terrain">Terrain</option>
                 </select>
@@ -72,7 +72,7 @@ function LocationFilter({ setFilteredCampsites, campsites }: LocationFilterProps
                         value={filterValue} 
                         onChange={handleFilterChange}
                     >
-                        <option value="">-- Select {filterType === "region" ? "Region" : "Terrain"} --</option>
+                        <option value="">Select {filterType === "region" ? "Region" : "Terrain"}</option>
                         {(filterType === "region" ? regions : terrains).map((option, index) => (
                             <option className="filter__option" key={index} value={option}>{option}</option>
                         ))}
