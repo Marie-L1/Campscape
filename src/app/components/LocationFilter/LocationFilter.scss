@@ -10,9 +10,16 @@
     margin: 1rem 0;
     background-color: $secondary-light;
     width: 100%;
-    padding: 10px 0;
-    &__type{
-        display: flex;
+    padding: 6px 0;
+
+    &__type select, &__value select{
+        width: 90%;
+        padding: 5px;
+        @include labels-links-buttons;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: $primary-light;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
     }
     &__label{
         @include body-small;
