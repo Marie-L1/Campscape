@@ -3,25 +3,22 @@
 
 
 .newsletter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex-column;
+    @include flex-center-items;
     padding: 5rem 0;
     
     &__label{
         @include sub-header;
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
     }
     &__form{
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         gap: 1rem;
     }
     &__input{
         @include body-medium;
         border: none;
-        border-bottom: 1px solid $primary-dark;
+        border-bottom: .0625rem solid $primary-dark;
         background-color: transparent;
         width: 40vw;
         padding: 0.5rem 1rem;
@@ -31,13 +28,13 @@
         }
     }
     &__btn{
-        padding: 1rem;
+        padding: 0.5rem;
         background-color: $primary-blue;
         border: none;
-        border-radius: 5px;
+        border-radius: .3125rem;
         color: $primary-light;
         cursor: pointer;
-        @include body-medium;
+        @include body-small;
 
         &:hover{
             background-color: $secondary-blue;
@@ -59,7 +56,8 @@
             padding: 1rem 1.5rem;
         }
         &__btn{
-            padding: 1.5rem;
+            padding: 1rem;
+            @include body-medium;
         }
     }
     @include desktop{
@@ -75,8 +73,8 @@
             padding: 1rem 1.5rem;
         }
         &__btn{
-            padding: 2rem;
-            @include dt-sub-header;
+            padding: 1.5rem;
+            @include body-large;
         }
 
     }
