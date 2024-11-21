@@ -51,7 +51,7 @@
             @include dt-page-header;
         }
         &__description{
-            @include dt-body-large;
+            @include sub-header;
         }
     }
     @include desktop{
