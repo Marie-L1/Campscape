@@ -47,7 +47,7 @@
 
 //DESKTOP AND TABLET TEXT STYLES
 @mixin dt-page-header {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 2.5rem;
 }
 @mixin dt-sub-header {
@@ -96,6 +96,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin flex-center-items-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 @mixin flex-start-justify{

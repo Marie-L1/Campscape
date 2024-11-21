@@ -1,0 +1,53 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.nav{
+
+    &__logo{
+        margin: -1.25rem 0 -2.5rem 1.25rem;
+    }
+    &__logo-link{
+        @include flex-center-items;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1.25rem 0;
+    }
+    &__links{
+        text-decoration: none;
+        color: $primary-dark;
+        @include body-medium;
+        position: relative;
+
+        &.active{
+            border-bottom: .125rem solid $primary-dark;
+        }
+        &:hover{
+            color: $primary-blue;
+        }
+    }
+    @include tablet{
+        &__logo{
+            width: 10.625rem;
+            height: 10.625rem;
+        }
+        &__links{
+            @include dt-body-medium;
+        }
+    }
+    @include desktop{
+        &__logo{
+            width: 15.625rem;
+            height: 15.625rem;
+        }
+        &__links{
+            @include dt-sub-header;
+        }
+        &__list{
+            justify-content: space-evenly;
+            margin: 1.25rem 0;
+        }
+    }
+}

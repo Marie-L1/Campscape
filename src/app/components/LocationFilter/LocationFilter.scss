@@ -1,0 +1,80 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.filter{
+    @include flex-column;
+    @include flex-center-items;
+    gap: 1rem;
+    margin: 1rem 0;
+    background-color: $secondary-light;
+    width: 100%;
+    padding: .375rem 0;
+
+    &__type select, &__value select{
+        width: 100%;
+        padding: .3125rem;
+        @include labels-links-buttons;
+        border-radius: .3125rem;
+        border: .0313rem solid $primary-light;
+        background-color: $primary-light;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        @include flex-row;
+        @include flex-center-items;
+    }
+    &__label{
+        @include body-medium;
+        color: $primary-dark;
+        margin-right: 0.5rem;
+    }
+    &__reset-btn{
+        @include body-medium;
+        color: $primary-dark;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 1rem;
+        border-radius: .3125rem;
+        &:hover{
+            color: $primary-blue;
+            background-color: $primary-dark;
+        }
+    }
+    @include tablet{
+        @include flex-row;
+        @include flex-center-items;
+        gap: 5rem;
+        margin: 2rem 0;
+        width: 100%;
+        padding: 1.875rem 0;
+
+        &__label{
+            @include body-large;
+            color: $primary-dark;
+            margin-right: 0.5rem;
+        }
+        &__option{
+            width: 1.25rem;
+            padding: 1rem;
+        }
+        &__reset-btn{
+            @include body-large;
+        }
+    }
+    @include desktop{
+        @include flex-row;
+        @include flex-center-items;
+        gap: 10rem;
+        margin: 1rem 0;
+        width: 100%;
+        padding: 1.875rem 0;
+
+        &__label{
+            @include body-large;
+            color: $primary-dark;
+            margin-right: 0.5rem;
+        }
+        &__reset-btn{
+            @include body-large;
+        }
+    }
+}

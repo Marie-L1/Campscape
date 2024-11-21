@@ -1,0 +1,160 @@
+@use "../styles/partials/mixins" as *;
+@use "../styles/partials/variables" as *;
+
+.campsite-list{
+    @include flex-column;
+    @include flex-center-items;
+
+    &__hero{
+        background-image: url("/images/hero-campsite.jpg");
+        background-size: cover;
+        background-position: bottom;
+        height: 400px;
+        width: 100%;
+    }
+    &__hero-title{
+        @include page-header;
+        color: $primary-light;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 100%;
+        background-color: rgba(130, 194, 230, 0.5);
+        color: $primary-dark;
+    }
+    &__title{
+        @include sub-header;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    &__card{
+        @include flex-column;
+        @include flex-center-items;
+        gap: 20px;
+        border: 1.5px solid $secondary-light;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 20px;
+        width: 300px;
+        box-shadow: 0px 0px 4px 1px rgb(206 201 201);
+
+        &:hover{
+            border: 2px solid $primary-blue;
+        }
+    }
+    &__card-img{
+        border-radius: 5px;
+        box-shadow: -1px 0px 3px 1px rgb(206 201 201);
+        width: 250px;
+        height: 250px;
+    }
+    &__card-title{
+        @include body-large;
+        text-align: center;
+        width: 100%;
+    }
+    &__card-location{
+        @include body-medium;
+        color: $secondary-blue;
+    }
+    &__card-btn{
+        @include body-medium;
+        background-color: $primary-light;
+        color: $primary-dark;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        width: 15.5rem;
+
+        &:hover{
+            background-color: $secondary-light;
+            color: $secondary-blue;
+        }
+    }
+    @include tablet{
+
+    &__hero{
+        height: 31.25rem;
+        width: 100%;
+    }
+    &__hero-title{
+        @include dt-page-header;
+    }
+    &__title{
+        @include dt-sub-header;
+    }
+    &__cards-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 0;
+    }
+    &__card{
+        padding: .9375rem;
+        margin: .625rem;
+        width: 15.625rem;
+    }
+    &__card-img{
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    &__card-title{
+        @include dt-body-medium;
+    }
+    &__card-location{
+        @include dt-body-medium;
+    }
+    &__card-btn{
+        @include dt-body-medium;
+        width: 12.5rem;
+    } 
+}
+    @include desktop{
+
+        &__hero{
+            height: 80vh;
+        }
+        &__hero-title{
+            @include dt-page-header;
+            color: $primary-light;
+            text-align: center;
+            padding: 5rem 0;
+        }
+        &__title{
+            @include dt-sub-header;
+            padding: 1.875rem 0 1.25rem 0;
+        }
+        &__cards-wrapper{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0;
+            grid-row-gap: 0;
+            margin: 2.5rem 0;
+        }
+        &__card{
+            gap: 1.5625rem;
+            padding: .9375rem;
+            margin: 1.25rem;
+            width: 18.75rem;
+        }
+        &__card-img{
+            width: 15.625rem;
+            height: 15.625rem;
+        }
+        &__card-title{
+            @include dt-body-medium;
+        }
+        &__card-location{
+            @include dt-body-medium;
+        }
+        &__card-btn{
+            @include dt-body-medium;
+            width: 12.5rem;
+        } 
+
+    }
+}

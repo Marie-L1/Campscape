@@ -1,0 +1,81 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+
+.newsletter{
+    @include flex-column;
+    @include flex-center-items;
+    padding: 5rem 0;
+    
+    &__label{
+        @include sub-header;
+        margin-bottom: 2.5rem;
+    }
+    &__form{
+        @include flex-row;
+        gap: 1rem;
+    }
+    &__input{
+        @include body-medium;
+        border: none;
+        border-bottom: .0625rem solid $primary-dark;
+        background-color: transparent;
+        width: 40vw;
+        padding: 0.5rem 1rem;
+
+        &:focus{
+            border-color: $primary-dark;
+        }
+    }
+    &__btn{
+        padding: 0.5rem;
+        background-color: $primary-blue;
+        border: none;
+        border-radius: .3125rem;
+        color: $primary-light;
+        cursor: pointer;
+        @include body-small;
+
+        &:hover{
+            background-color: $secondary-blue;
+        }
+    }
+    @include tablet{
+        padding: 10rem 0;
+    
+        &__label{
+            @include dt-sub-header;
+            margin-bottom: 3.125rem;
+        }
+        &__form{
+            margin-left: 1.875rem;
+        }
+        &__input{
+            @include dt-body-medium;
+            width: 45vw;
+            padding: 1rem 1.5rem;
+        }
+        &__btn{
+            padding: 1rem;
+            @include body-medium;
+        }
+    }
+    @include desktop{
+        padding: 20rem 0;
+    
+        &__label{
+            @include dt-page-header;
+            margin-bottom: 3.125rem;
+        }
+        &__input{
+            @include dt-body-medium;
+            width: 50vw;
+            padding: 1rem 1.5rem;
+        }
+        &__btn{
+            padding: 1.5rem;
+            @include body-large;
+        }
+
+    }
+}

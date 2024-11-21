@@ -1,0 +1,71 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.camp-list{
+    display: flex;
+    overflow-x: auto;
+    padding: 2rem;
+    gap: 1rem;
+
+    &__item{
+        flex-shrink: 0;
+        @include flex-column;
+        @include flex-center-items;
+    }
+    &__title{
+        @include body-large;
+        text-decoration: none;
+        color: $primary-dark;
+        border: none;
+    }
+    &__img{
+        border-radius: .9375rem;
+        box-shadow: -0.0625rem 0 .3125rem .1875rem rgb(206 201 201);
+        width: 18.75rem;
+        height: 18.75rem;
+    }
+    &__link{
+        text-decoration: none;
+        @include flex-column;
+        align-items: center;
+    }
+    @include tablet{
+        &__title{
+            @include dt-body-large;
+        }
+        &__img{
+            width: 25rem;
+            height: 25rem;
+        }
+    }
+    @include desktop{
+        margin-left: 4.375rem;
+        &__title{
+            @include dt-sub-header;
+        }
+        &__img{
+            width: 31.25rem;
+            height: 31.25rem;
+        }
+    }
+}
+
+
+.camp-title{
+    @include sub-header;
+    margin-left: 30px;
+    margin-bottom: -5px;
+    margin-top: 30px;
+
+    @include tablet{
+        @include dt-sub-header;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+    @include desktop{
+        @include dt-page-header;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-left: 100px;
+    }
+}

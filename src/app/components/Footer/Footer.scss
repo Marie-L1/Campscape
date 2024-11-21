@@ -1,0 +1,131 @@
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: $primary-light;
+
+     &__wrapper{
+        @include flex-column;
+        gap: 14px;
+     }
+     &__items{
+         @include flex-column;
+         align-items: flex-start;
+         justify-content: center;
+         gap: 10%;
+     }
+     &__logo{
+        margin-bottom: -0.625rem;
+     }
+     &__logo-img{
+        margin-left: 1.0625rem;
+     }
+     &__links{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0 0 1.875rem 1.875rem;
+     }
+     &__children-links{
+      @include flex-column;
+        gap: .25rem;
+        color: $secondary-light;
+        text-decoration: none;
+        margin-right: 12px;
+     }
+     &__link-item{
+      @include flex-column;
+        gap: .25rem;
+        color: $secondary-blue;
+        text-decoration: none;
+        @include body-small;
+
+        &:hover{
+         cursor: pointer;
+         border-bottom: .0938rem solid $secondary-blue;
+      }
+     }
+     &__trees{
+      width: 20vw;
+      height: 20vh;
+      margin: -6.25rem 0 0 18.75rem;
+      padding-bottom: .625rem;
+     }
+     @include tablet{
+      padding: 1.875rem;
+
+      &__logo-img{
+         margin-left: 1.25rem;
+         width: 7.5rem;
+         height: 7.5rem;
+      }
+      &__links{
+         gap: 8.75rem;
+      }
+      &__children-links{
+         gap: .5rem;
+      }
+      &__link-item{
+         @include dt-body-small;
+      }
+      &__trees{
+       width: 25vw;
+       height: 25vh;
+       margin: -7.5rem 0 0 29.375rem;
+      }
+     }
+     @include desktop{
+      padding-left: 15.625rem;
+
+      &__logo-img{
+         margin-left: 1.25rem;
+         width: 10rem;
+         height: 10rem;
+      }
+      &__links{
+         gap: 18.75rem;
+      }
+      &__children-links{
+         gap: .5rem;
+      }
+      &__link-item{
+         @include dt-body-medium;
+      }
+      &__trees{
+       width: 30vw;
+       height: 30vh;
+       margin: -7.5rem 0 0 53.125rem;
+      }
+     }
+
+}
+
+
+.footer-column{
+    @include flex-column;
+    gap: 5px;
+
+    &__title{
+        white-space: nowrap;
+        @include body-medium;
+        margin: 0 0 .9375rem -1.875rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    @include tablet{
+      &__title{
+         @include dt-body-medium;
+         margin-left: -2.3125rem;
+     }
+    }
+    @include desktop{
+      &__title{
+         @include dt-body-large;
+         margin-left: -2.3125rem;
+     }
+    }
+}
