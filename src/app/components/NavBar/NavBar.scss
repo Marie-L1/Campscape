@@ -4,18 +4,16 @@
 .nav{
 
     &__logo{
-        margin: -20px 0 -40px 20px;
+        margin: -1.25rem 0 -2.5rem 1.25rem;
     }
     &__logo-link{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center-items;
     }
     &__list{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: 20px 0;
+        margin: 1.25rem 0;
     }
     &__links{
         text-decoration: none;
@@ -24,7 +22,7 @@
         position: relative;
 
         &.active{
-            border-bottom: 2px solid $primary-dark;
+            border-bottom: .125rem solid $primary-dark;
         }
         &:hover{
             color: $primary-blue;
@@ -32,8 +30,8 @@
     }
     @include tablet{
         &__logo{
-            width: 170px;
-            height: 170px;
+            width: 10.625rem;
+            height: 10.625rem;
         }
         &__links{
             @include dt-body-medium;
@@ -41,15 +39,15 @@
     }
     @include desktop{
         &__logo{
-            width: 250px;
-            height: 250px;
+            width: 15.625rem;
+            height: 15.625rem;
         }
         &__links{
             @include dt-sub-header;
         }
         &__list{
             justify-content: space-evenly;
-            margin: 20px 0;
+            margin: 1.25rem 0;
         }
     }
 }

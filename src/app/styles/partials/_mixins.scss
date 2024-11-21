@@ -98,6 +98,13 @@
     align-items: center;
 }
 
+@mixin flex-center-items-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
 @mixin flex-start-justify{
     display: flex;
     justify-content: flex-start;

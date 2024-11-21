@@ -2,28 +2,24 @@
 @use "../../styles/partials/variables" as *;
 
 .filter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex-column;
+    @include flex-center-items;
     gap: 1rem;
     margin: 1rem 0;
     background-color: $secondary-light;
     width: 100%;
-    padding: 6px 0;
+    padding: .375rem 0;
 
     &__type select, &__value select{
         width: 100%;
-        padding: 5px;
+        padding: .3125rem;
         @include labels-links-buttons;
-        border-radius: 5px;
-        border: 0.5px solid $primary-light;
+        border-radius: .3125rem;
+        border: .0313rem solid $primary-light;
         background-color: $primary-light;
         transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        @include flex-row;
+        @include flex-center-items;
     }
     &__label{
         @include body-medium;
@@ -37,55 +33,41 @@
         background-color: transparent;
         cursor: pointer;
         padding: 1rem;
-        border-radius: 5px;
+        border-radius: .3125rem;
         &:hover{
             color: $primary-blue;
             background-color: $primary-dark;
         }
     }
     @include tablet{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
+        @include flex-row;
+        @include flex-center-items;
         gap: 5rem;
         margin: 2rem 0;
-        background-color: $secondary-light;
         width: 100%;
-        padding: 30px 0;
+        padding: 1.875rem 0;
+
         &__label{
             @include body-large;
             color: $primary-dark;
             margin-right: 0.5rem;
         }
         &__option{
-            width: 20px;
+            width: 1.25rem;
             padding: 1rem;
         }
         &__reset-btn{
             @include body-large;
-            color: $primary-dark;
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-            padding: 1rem;
-            border-radius: 5px;
-            &:hover{
-                color: $primary-blue;
-                background-color: $primary-dark;
-            }
         }
     }
     @include desktop{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
+        @include flex-row;
+        @include flex-center-items;
         gap: 10rem;
         margin: 1rem 0;
-        background-color: $secondary-light;
         width: 100%;
-        padding: 30px 0;
+        padding: 1.875rem 0;
+
         &__label{
             @include body-large;
             color: $primary-dark;
@@ -93,16 +75,6 @@
         }
         &__reset-btn{
             @include body-large;
-            color: $primary-dark;
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-            padding: 1rem;
-            border-radius: 5px;
-            &:hover{
-                color: $primary-blue;
-                background-color: $primary-dark;
-            }
         }
     }
 }
