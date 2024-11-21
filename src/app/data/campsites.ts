@@ -192,7 +192,7 @@ export type Review = {
       "terrain": "Foothills",
       "description": "Fish Creek Provincial Park Campground offers a perfect blend of accessibility and nature. Located just outside Calgary, it provides a peaceful escape with plenty of natural beauty to explore. The park features a variety of ecosystems, including wetlands, forests, and grasslands, and is home to diverse wildlife such as deer, birds, and rabbits. The campground itself is well-equipped with modern amenities, including picnic tables, fire pits, and hot showers. The nearby pathways make it easy to enjoy hiking, biking, or simply strolling through the park. With its convenient location and well-maintained facilities, Fish Creek Provincial Park Campground is ideal for both short visits and extended stays.",
       "scenicImage": "fish-creek-scenic.jpeg",
-      "campsiteImage": "fish-creek-campsite.webp",
+      "campsiteImage": "fishcreek-campsite.jpg",
       "reviews": [
         {
           "id": "review16",
@@ -224,7 +224,7 @@ export type Review = {
       "terrain": "Prairies",
       "description": "Nestled along the serene shores of Wabamun Lake, this provincial park offers the perfect combination of relaxation and adventure. The campground is ideal for those looking to enjoy a variety of water-based activities, such as kayaking, paddleboarding, and fishing. The lake’s calm waters make it perfect for beginners and experienced water sports enthusiasts alike. With plenty of scenic spots for picnicking, hiking trails for exploration, and beautiful views of the surrounding forest, Wabamun Lake Provincial Park is a wonderful destination for both families and solo travelers. Whether you’re enjoying a peaceful day by the water or participating in one of the many recreational activities available, Wabamun Lake promises an unforgettable outdoor experience.",
       "scenicImage": "wabamun-scenic.jpg",
-      "campsiteImage": "wabamun-campground.jpg",
+      "campsiteImage": "wabamun-campsite.jpg",
       "reviews": [
         {
           "id": "review19",
