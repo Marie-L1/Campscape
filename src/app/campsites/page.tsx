@@ -1,22 +1,14 @@
-"use client"
-import { useState } from 'react';
-import { CAMPSITE_ROUTES } from '../constants';
-import Link from 'next/link';
-import Image from 'next/image';
-import { campsites } from '../data/campsites';
-import './campsitesList.scss';
-import LocationFilter from '../components/LocationFilter/LocationFilter';
-
-interface Campsite {
-  id: number;
-  name: string;
-  region: string;
-  terrain: string;
-  location: string;
-  scenicImage: string;
-}
+"use client";
+import { useState } from "react";
+import { CAMPSITE_ROUTES } from "../constants";
+import Link from "next/link";
+import Image from "next/image";
+import { campsites, Campsite } from "@/app/data/campsites";  // Ensure Campsite type is imported
+import "./campsitesList.scss";
+import LocationFilter from "../components/LocationFilter/LocationFilter";
 
 const CampsiteList = () => {
+  // Initialize filteredCampsites with the full campsites list initially
   const [filteredCampsites, setFilteredCampsites] = useState<Campsite[]>(campsites);
 
   return (
@@ -25,10 +17,11 @@ const CampsiteList = () => {
         <h1 className="campsite-list__hero-title">Discover Your Next Adventure</h1>
       </div>
 
-      {/* Pass setFilteredCampsites to LocationFilter */}
+      {/* Pass setFilteredCampsites and campsites to the LocationFilter */}
       <LocationFilter setFilteredCampsites={setFilteredCampsites} campsites={campsites} />
 
       <div className="campsite-list__cards-wrapper">
+        {/* Render the filtered campsites */}
         {filteredCampsites.map((camp) => (
           <div key={camp.id} className="campsite-list__card">
             <Image
