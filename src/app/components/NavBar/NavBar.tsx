@@ -3,7 +3,6 @@ import "./NavBar.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { NAV_LINKS } from "../../constants";
-import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
 
 const NavBar = () => {

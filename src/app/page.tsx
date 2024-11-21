@@ -1,4 +1,3 @@
-import Image from "next/image";
 import HomeHero from "./components/HomeHero/HomeHero";
 import CampList from "./components/CampList/CampList";
 import Newsletter from "./components/Newsletter/Newsletter";

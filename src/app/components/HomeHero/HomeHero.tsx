@@ -1,5 +1,4 @@
 import "./HomeHero.scss";
-import Image from "next/image";
 
 const HomeHero = () => {
   return (

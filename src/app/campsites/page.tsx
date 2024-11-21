@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { CAMPSITE_ROUTES } from "../constants";
 import Link from "next/link";
 import Image from "next/image";
 import { campsites, Campsite } from "@/app/data/campsites";  // Ensure Campsite type is imported
