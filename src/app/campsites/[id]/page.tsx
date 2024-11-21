@@ -11,10 +11,6 @@ const CampsiteById = () => {
   const { id } = useParams<{ id: string }>(); 
   const campsite = campsites.find((camp: Campsite) => camp.id === id);
 
-  if (!campsite) {
-    return <p>Campsite not found</p>;
-  }
-
   const [currentImage, setCurrentImage] = useState<"campsiteImage" | "scenicImage">("campsiteImage");
 
   useEffect(() => {
@@ -24,13 +20,17 @@ const CampsiteById = () => {
     return () => clearInterval(imageInterval);
   }, []);
 
+  if (!campsite) {
+    return <p>Campsite not found</p>;
+  }
+
   return (
     <section className="campsite">
       <div className="campsite__header">
         <h1 className="campsite__title">{campsite.name}</h1>
         <Image
           className="campsite__img"
-          src={`/images/${campsite[currentImage]}`} // Now type-safe
+          src={`/images/${campsite[currentImage]}`}
           alt={campsite.name}
           width={600}
           height={400}
